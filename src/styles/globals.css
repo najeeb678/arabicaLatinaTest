@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* Font Faces */
+@font-face {
+  font-family: "GaretBook";
+
+  src: url("/fonts/Garet-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GaretHeavy";
+
+  src: url("/fonts/Garet-Heavy.otf") format("opentype");
+}
+@font-face {
+  font-family: "AestheticRomance";
+
+  src: url("/fonts/Aesthetic Romance.ttf") format("opentype");
+}
+
+/* Root Variables */
+:root {
+  --font-garet-book: "GaretBook", sans-serif;
+  --font-garet-heavy: "GaretHeavy", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-garet-book), var(--font-poppins), sans-serif;
+  /* background-color: #fdf8f5; */
+  background-color: #fef9f4 !important;
+  color: black;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-garet-heavy), sans-serif;
+}
+
+/* Utility Classes */
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Reset and Base Utilities */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.775rem;
+  margin-top: 0.25rem;
+  font-weight: 400;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #a44819;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1290;
+  transition: all 0.5s ease;
+}
+
+.scroll-to-top:hover {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+}
+
+.scroll-icon {
+  transform: translate(12px, 12px);
+  color: #fff;
+  font-size: 24px;
+}
+
+
+
+.slick-slide {
+  padding: 0 5px;
+  box-sizing: border-box; /* Ensure padding doesn't break the layout */
+  display: flex;
+  justify-content: center; /* Center content */
+  align-items: center;
+}
+
+/* Ensure images resize while maintaining aspect ratio */
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 265px; /* Limit max size */
+}
+
+/* Optional: Ensure heart icon stays positioned */
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  z-index: 10;
+}
+

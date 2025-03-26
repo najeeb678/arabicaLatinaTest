@@ -1,0 +1,133 @@
+/* landingPage.module.css */
+
+/* General container for landing page */
+.landingContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: auto;
+}
+
+/* Container for Hero Section */
+.heroSectionContainer {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+/* Container for WrapCollection */
+.wrapCollectionContainer {
+  width: 85%;
+  margin: auto;
+}
+
+/* Section with background */
+.backgroundSection {
+  height: auto;
+  background-color: #94624a;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .backgroundSection {
+    height: 150px;
+    flex-direction: row;
+  }
+}
+
+/* Texture image container */
+.textureImageContainer {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .textureImageContainer {
+    display: block;
+  }
+}
+
+/* Container for text inside the background section */
+.textContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .textContainer {
+    padding: 0;
+  }
+}
+
+/* Typography styles */
+.mainTypography {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+ margin-left: 20%;
+}
+
+
+@media (max-width: 1024px) {
+  .mainTypography {
+    font-size: 18px;
+
+    max-width: 50%;
+  }
+}
+@media (max-width: 765px) {
+  .mainTypography {
+    font-size: 16px;
+    margin-left: 0%;
+    max-width: 50%;
+  }
+}
+/* Shop Now link styling */
+.shopNowLink {
+  position: relative;
+  right: 0;
+  top: 5%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #fff;
+  line-height: auto;
+  font-family: Poppins;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  justify-self: flex-end;
+}
+
+@media (max-width: 600px) {
+  .shopNowLink {
+   
+    margin-top: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .shopNowLink {
+    margin-top: 0;
+  }
+}
+
+.shopNowLink:hover {
+  color: #a44819;
+}

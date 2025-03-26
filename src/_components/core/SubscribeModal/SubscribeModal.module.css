@@ -1,0 +1,54 @@
+.modalContainer {
+  position: fixed;
+  top: -100%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 1000;
+  padding: 30px;
+  background-color: rgba(241, 227, 207, 0.7);
+}
+
+.modalContainer.visible {
+  top: 0;
+  opacity: 1;
+}
+
+.modal {
+  background: #c48e70;
+  max-width: 800px;
+  width: 100%;
+  top: 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.modalContent {
+  text-align: center;
+}
+
+.subscribeBtn {
+  background: #2e2b2a;
+  color: #e2cba2;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  height: 35px;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 22px;
+  margin-bottom: 25px;
+  transition: background 0.3s ease;
+}
+
+.subscribeBtn:hover {
+  color: #fff;
+  background: #292a1a;
+}
