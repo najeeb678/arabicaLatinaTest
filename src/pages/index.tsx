@@ -47,7 +47,7 @@ export async function getServerSideProps() {
     {
       label: "Shop Men",
       // image: "https://res.cloudinary.com/drascgtap/image/upload/v1742553015/BookingEngine/vsryhl20xf6cf9jravsj.png",
-      // image: "/Images/PORTADA2.webp",
+      // image: "/Images/PORTADA2.webp",//testing
       image: "/Images/variant2.svg",
       url: "/collections/men",
     },
