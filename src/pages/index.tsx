@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 import SubscribeModal from "@/_components/core/SubscribeModal/SubscribeModal";
 import type { Metadata } from "next";
 
-
-
 export default function Home({ categories }: any) {
   if (!categories) {
     console.warn("⚠️ categories is undefined in Home component!");
@@ -22,8 +20,14 @@ export default function Home({ categories }: any) {
   return (
     <>
       <Head>
-        <title>Arabica Latina - Best Quality Shawls, Scarves, and Outerwear Collection</title>
-        <meta name="description" content="Discover luxurious shawls, scarves, and outerwear crafted with authentic Latin American designs." />
+        <title>
+          Arabica Latina - Best Quality Shawls, Scarves, and Outerwear
+          Collection
+        </title>
+        <meta
+          name="description"
+          content="Discover luxurious shawls, scarves, and outerwear crafted with authentic Latin American designs."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Images/Capa.svg" />
       </Head>
@@ -53,9 +57,11 @@ export async function getServerSideProps() {
     },
     {
       label: "Shop Jewelry",
-      // image: "https://res.cloudinary.com/drascgtap/image/upload/v1742553044/BookingEngine/xgmxsqxoion1b1pdz8sm.png",
+      image:
+        "https://mymediadata.s3.us-east-2.amazonaws.com/uploads/763b8246-7744-4ee1-a360-926540379380-susan-wilkinson-9dDJk8lvUwg-unsplash%20(1).jpg",
+      // "https://res.cloudinary.com/dgbjpy7ev/image/upload/v1743079698/extra/variant3_xuhdup.svg",
       // image: "/Images/PORTADA3.webp",
-      image: "/Images/variant3.svg",
+      // image: "/Images/variant3.svg",
       url: "/collections/jewelry",
     },
   ];
